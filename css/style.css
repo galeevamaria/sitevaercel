@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Mirra Auriolic';
+    src: url('../fonts/mirra.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Departura';
+    src: url('../fonts/Departura-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Evolventa';
+    src: url('../fonts/Evolventa-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #FFFEF9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 240px;
+    margin: 0 auto;
+}
+
+.main {
+    background: url(../image/background.jpg) center center / cover no-repeat;
+    height: 793px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+}
+.logo {
+    color: #fff;
+    font-family: "Mirra Auriolic";
+    font-size: 48px;
+    font-weight: 400;
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 88px;
+    width: 398px;
+    height: 439px;
+    padding: 32px 0 32px 0;
+    border-radius: 35px;
+    backdrop-filter: blur(9.8px);
+    background: rgba(80, 36, 1, 0.87);
+    opacity: 0;
+    display: none;
+    transition: 0.8s;
+    z-index: 100;
+}
+.menu_item {
+    margin: 14px 0 14px 0;
+    color: #fff;
+    font-family: Evolventa;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+}
+.menu-btn {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    cursor: pointer;
+}
+.menu-btn .bar {
+	width: 32px;
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.menu-btn .bar:nth-of-type(2) {
+	top: calc(50% - 9px);
+}
+.menu-btn .bar:nth-of-type(3) {
+	top: calc(50% + 9px);
+}
+
+.menu-btn.active .bar:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active .bar:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active .bar:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+.menu.active {
+    display: block;
+	opacity: 1;
+
+}
+
+.main_title {
+    margin-top: 320px;
+    color: #fff;
+    font-family: "Mirra Auriolic";
+    font-size: 100px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.about {
+    padding: 204px 0 217px 0;
+}
+.about_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_text {
+    margin-right: 7%;
+}
+.title {
+    color: #502401;
+    font-family: "Mirra Auriolic";
+    font-size: 76px;
+    font-weight: 400;
+}
+.about_descr {
+    color: #000;
+    font-family: Evolventa;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 23px 0 23px 0;
+}
+.about_img {
+    width: 36%;
+    height: auto;
+    border-radius: 52px;
+}
+
+.portfolio {
+    padding: 107px 0 236px 0;
+    background-color: #502401;
+}
+.title_white {
+    color: #fff;
+    text-align: center;
+}
+.portfolio_wrapper {
+    margin-top: 94px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.portfolio_item {
+    width: 31%;
+    height: auto;
+    border-radius: 52px;
+    margin: 0 -40px 0 -40px;
+    transition: 0.5s;
+}
+.portfolio_1 {
+    transform: rotate(-11deg);
+    z-index: 1;
+}
+.portfolio_2 {
+    transform: rotate(11deg);
+    z-index: 2;
+}
+.portfolio_3 {
+    transform: rotate(-11deg);
+    z-index: 3;
+}
+.portfolio_4 {
+    transform: rotate(11deg);
+    z-index: 1;
+}
+.portfolio_item:hover {
+    z-index: 10;
+}
+
+
+.callback {
+    margin:  0 auto;
+    text-align: center;
+    padding: 100px 0;
+    max-width: 900px;
+}
+
+.callback label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #502401;
+    font-weight: 500;
+}
+
+.callback input,
+.callback textarea {
+    background-color: inherit;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: 2px solid #502401;
+}
+
+.callback .button {
+    padding: 20px 35px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #502401;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.success {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.callback .button:hover {
+background-color: #8f4000;
+}
+
+.callback .title {
+    margin-bottom: 35px;
+}
+
+.callback_line {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.callback_line:not(:last-child) {
+     margin-bottom: 30px;
+}
+
+
+footer {
+    background-color: #502401;
+    color: $fff;
+    padding: 58px 0;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts a {
+    text-align: right;
+    color: #fff;
+    display: block;
+    font-family: Departura;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.work_footer {
+    background-color: #502401;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.brown_logo {
+    color: #502401;
+    text-stroke: 1px #502401;
+    -webkit-text-stroke: 1px #502401;
+}
+.menu-btn .bar_brown {
+    background-color: #502401;
+}
+.contacts .white {
+    color: #fff;
+}
+.work_content {
+    padding: 120px 0 164px;
+}
+.work_title {
+    color: #502401;
+    font-family: "Mirra Auriolic";
+    font-size: 76px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+#animation_container {
+    margin: 0 auto;
+}
+.work_descr {
+    padding-top: 90px;
+    margin: 0 auto;
+    color: #000;
+    font-family: Evolventa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}

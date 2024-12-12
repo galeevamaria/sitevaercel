@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari Galeeva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <header>
+                <a class="logo" href="index.html">MARI</a>
+                <div class="menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="menu">
+                    <a href="work_1.html" class="menu_item">1 практическая работа</a>
+                    <a href="work_2.html" class="menu_item">2 практическая работа</a>
+                    <a href="work_3.html" class="menu_item">3 практическая работа</a>
+                    <a href="work_4.html" class="menu_item">4 практическая работа</a>
+                    <a href="work_5.html" class="menu_item">5 практическая работа</a>
+                    <a href="#" class="menu_item">6 практическая работа</a>
+                    <a href="#" class="menu_item">7 практическая работа</a>
+                    <a href="#" class="menu_item">8 практическая работа</a>
+                </div>
+            </header>
+            <h1 class="main_title">MARI GALEEVA</h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about_wrap">
+                <div class="about_text">
+                    <h2 class="title">About me:</h2>
+                    <p class="about_descr">
+                        Привет! Меня зовут Мари, я графический дизайнер и художница.
+                    </p>
+                    <p class="about_descr">
+                        Как дизайнер владею программами и инструментами, необходимыми для создания графических работ,
+                        такими
+                        как Adobe illustrator, Adobe Photoshop, Figma, Adobe Animate и др.
+                    </p>
+                    <p class="about_descr">
+                        Кроме того, у меня есть навыки работы с различными форматами дизайна, такими как логотипы,
+                        баннеры, упаковка и веб-дизайн.
+                    </p>
+                </div>
+                <img src="image/about.png" alt="" class="about_img">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="title title_white">Portfolio:</h2>
+            <div class="portfolio_wrapper">
+                <img src="image/portfolio_1.png" alt="" class="portfolio_item portfolio_1">
+                <img src="image/portfolio_2.png" alt="" class="portfolio_item portfolio_2">
+                <img src="image/portfolio_3.png" alt="" class="portfolio_item portfolio_3">
+                <img src="image/portfolio_4.png" alt="" class="portfolio_item portfolio_4">
+            </div>
+        </div>
+    </section>
+
+    <section class="callback">
+        <div class="container">
+            <h2 class="title">Write Me:</h2>
+            <div class="info" id="information"></div>
+
+            <form id="send-message-telegram" enctype="multipart/form-data">
+                <div class="callback_line">
+                    <label for="name">Имя:</label>
+                    <input type="text" placeholder="Ваше имя" id="name" name="name" required />
+                </div>
+
+                <div class="callback_line">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" placeholder="Ваш телефон" id="phone" name="phone" required />
+                </div>
+                <div class="callback_line">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" placeholder="Ваше сообщение" name="message" rows="4" required></textarea>
+                </div>
+                <div class="callback_line">
+                    <label for="file">Прикрепить файл:</label>
+                    <input type="file" id="file" name="file" />
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="logo">MARI</div>
+                <div class="contacts">
+                    <a href="https://t.me/marigaleeva">telegram: @marigaleeva</a>
+                    <a href="mailto:mariyagaleeva03@mail.ru">email: mariyagaleeva03@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
